@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rupak Dey is a software engineer in Kolkata, India, building configure-price-quote software and CRM products at Selegic.">
+  <meta name="theme-color" content="#f7f5ee">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rupak Dey · Software Engineer">
+  <meta property="og:description" content="Selected work in quoting, pricing, and CRM software.">
+  <title>Rupak Dey · Software Engineer</title>
+  <link rel="icon" href="mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="shell masthead" id="top">
+    <a class="identity" href="#top" aria-label="Rupak Dey, home"><span class="seal" aria-hidden="true">RD</span> Rupak Dey</a>
+    <nav aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#background">Background</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main class="shell" id="main">
+    <section class="hero" aria-labelledby="name">
+      <div class="intro">
+        <p class="eyebrow"><span class="dot"></span> Software engineer in Kolkata, India</p>
+        <h1 id="name">Rupak Dey</h1>
+        <p class="lede">I build software for pricing, quoting, and CRM.</p>
+        <p class="intro-copy">At Selegic, I work on the rules that determine what can go into a quote, the APIs that calculate prices, and the screens sales teams use to put a deal together.</p>
+        <a class="text-link" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="figure">
+        <div class="figure-kicker"><span>System sketch</span><span>Fig. 01</span></div>
+        <svg class="diagram" viewBox="0 0 380 223" role="img" aria-labelledby="diagram-title diagram-desc">
+          <title id="diagram-title">A shared quoting core</title>
+          <desc id="diagram-desc">Product configuration, pricing, and quote rules feed the CPQ core, which runs on Salesforce and Selegic CRM.</desc>
+          <defs>
+            <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="7" cy="7" r=".75" fill="#596257"/></pattern>
+          </defs>
+          <rect x="0" y="0" width="380" height="223" fill="url(#dots)"/>
+          <path d="M65 50V68H315V50M190 50V91M190 139V163M99 182V163H281V182" fill="none" stroke="#a4ac8d"/>
+          <g fill="#2b362f" stroke="#758169">
+            <rect x="11" y="17" width="108" height="33"/>
+            <rect x="136" y="17" width="108" height="33"/>
+            <rect x="261" y="17" width="108" height="33"/>
+            <rect x="37" y="182" width="124" height="33"/>
+            <rect x="219" y="182" width="124" height="33"/>
+          </g>
+          <rect x="105" y="91" width="170" height="48" fill="#dce2bb" stroke="#dce2bb"/>
+          <g text-anchor="middle" fill="#f7f5ee" font-size="13">
+            <text x="65" y="38">Configure</text>
+            <text x="190" y="38">Price</text>
+            <text x="315" y="38">Quote</text>
+            <text x="99" y="203">Salesforce</text>
+            <text x="281" y="203">Selegic CRM</text>
+            <text x="190" y="121" fill="#25302a" font-size="16">Shared CPQ core</text>
+          </g>
+          <g fill="#dce2bb"><circle cx="190" cy="68" r="2.5"/><circle cx="190" cy="163" r="2.5"/></g>
+        </svg>
+        <figcaption>One quoting engine for two platforms.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <p class="eyebrow section-number">01 / Portfolio</p>
+        <h2 id="work-title">Selected work</h2>
+      </div>
+      <article class="work-entry">
+        <div class="entry-meta">
+          <span>01</span>
+          <p>Commercial product<br><time datetime="2025-08">Aug 2025</time> – Present</p>
+        </div>
+        <div class="entry-body">
+          <h3>Selegic CPQ</h3>
+          <p>I helped ship a commercial configure-price-quote platform with a rules engine shared by Salesforce and Selegic CRM. It evaluates nested conditions against quotes, line items, and product options, keeping the same configuration and pricing rules across both platforms.</p>
+          <p>I designed the APIs behind the quoting and admin portals and built a review workflow for AI-drafted rules. Quote and admin agents and an MCP connector are in development.</p>
+          <p class="stack">TypeScript · Angular · Node.js · Salesforce</p>
+        </div>
+      </article>
+      <article class="work-entry">
+        <div class="entry-meta">
+          <span>02</span>
+          <p>Platform engineering<br><time datetime="2026-08">Aug 2026</time> – Present</p>
+        </div>
+        <div class="entry-body">
+          <h3>Selegic CRM</h3>
+          <p>I work on a CRM where each workspace can define its own objects, fields, and views. I designed the engine that serves those records through a common API, with workspace-level authorization and row-level access controls.</p>
+          <p>I also built pricing and discount matrices with quantity bands and exact decimal storage for quote and contract amounts.</p>
+          <p class="stack">React · Hono · Cloudflare Workers · PostgreSQL</p>
+        </div>
+      </article>
+      <article class="work-entry">
+        <div class="entry-meta">
+          <span>03</span>
+          <p>Salesforce AppExchange<br><time datetime="2024-04">Apr 2024</time> – <time datetime="2025-08">Aug 2025</time></p>
+        </div>
+        <div class="entry-body">
+          <h3>Selegic Catalog</h3>
+          <p>I built product search, filters, and bundle configuration for a Salesforce CPQ catalog used by more than 800 sales reps at an enterprise customer. I helped take the product through Salesforce security review to a paid AppExchange listing.</p>
+          <a class="text-link" href="https://appexchange.salesforce.com/appxListingDetail?listingId=73a64dfd-a0f2-4d03-8f42-1d739673f7ea">View on AppExchange <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="section background" id="background" aria-labelledby="background-title">
+      <div class="section-heading">
+        <p class="eyebrow section-number">02 / Experience</p>
+        <h2 id="background-title">Background</h2>
+      </div>
+      <div class="background-grid">
+        <div>
+          <p class="eyebrow muted">Experience</p>
+          <h3>Software Engineer, Selegic</h3>
+          <p class="date"><time datetime="2020-10">Oct 2020</time> – Present · Kolkata, India</p>
+          <p>I started at Selegic building web applications with Angular and Node.js. I then moved into Salesforce CPQ delivery, building guided selling, quote review, and partner quoting workflows for enterprise teams.</p>
+          <p>My work now spans product configuration, pricing engines, and multi-tenant CRM. I’ve also evaluated Salesforce Revenue Cloud for product modeling, configuration rules, and pricing.</p>
+        </div>
+        <div class="credentials">
+          <p class="eyebrow muted">Salesforce certifications</p>
+          <ul>
+            <li>Platform Developer I</li>
+            <li>CPQ Specialist</li>
+            <li>Agentforce Specialist</li>
+          </ul>
+          <p class="eyebrow muted">Education</p>
+          <p>B.Tech, Guru Nanak Institute of Technology<br><span class="date">Kolkata · 2020</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="section-heading">
+        <p class="eyebrow section-number">03 / Contact</p>
+        <h2 id="contact-title">Get in touch</h2>
+      </div>
+      <address>
+        <a href="mailto:rupakdey1998@gmail.com">rupakdey1998@gmail.com <span aria-hidden="true">↗</span></a>
+        <a href="https://www.linkedin.com/in/rupak-dey-687121171/">LinkedIn <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/rupak-selegic">GitHub <span aria-hidden="true">↗</span></a>
+      </address>
+    </section>
+  </main>
+  <footer class="shell footer">
+    <span>Rupak Dey · Kolkata, India</span>
+    <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+  </footer>
+</body>
+</html>
