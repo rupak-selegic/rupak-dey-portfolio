@@ -123,6 +123,7 @@ figcaption { padding-top: .75rem; border-top: 1px solid #697462; color: #e2e6cc;
 .date { font-size: .83rem; color: var(--muted); }
 .credentials { padding-left: 1.5rem; border-left: 1px solid var(--rule); }
 .credentials ul { margin: 0; padding-left: 1.1rem; color: var(--muted); }
+.credentials .text-link { margin-top: .75rem; }
 .toolkit { margin-top: 2.75rem; }
 .toolkit dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .85rem 1.25rem; margin: 1rem 0 0; }
 .toolkit dl > div { border-top: 1px solid var(--rule); padding-top: .7rem; }
