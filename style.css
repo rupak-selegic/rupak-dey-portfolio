@@ -88,12 +88,17 @@ figcaption { padding-top: .75rem; border-top: 1px solid #697462; color: #e2e6cc;
 .entry-body p, .background-grid p { color: var(--muted); }
 .entry-body .stack { color: var(--accent); font-size: .74rem; margin-bottom: 0; }
 
-.background-grid, address { margin-left: 14.5rem; }
+.background-grid, .timeline, address { margin-left: 14.5rem; }
 .background-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 2.5rem; }
 .background-grid p:last-child { margin-bottom: 0; }
 .date { font-size: .83rem; color: var(--muted); }
 .credentials { padding-left: 1.5rem; border-left: 1px solid var(--rule); }
-.credentials ul { margin: 0 0 1.4rem; padding-left: 1.1rem; color: var(--muted); }
+.credentials ul { margin: 0; padding-left: 1.1rem; color: var(--muted); }
+.timeline { margin-top: 2.75rem; }
+.timeline ol { margin: 1rem 0 0; padding: 0; }
+.timeline li { display: grid; grid-template-columns: 7.5rem 1fr; gap: .75rem; align-items: baseline; padding-block: .85rem; border-top: 1px solid var(--rule); }
+.timeline time { color: var(--accent); font: .78rem/1.4 var(--mono); }
+.timeline p { margin: .15rem 0 0; color: var(--muted); font-size: .875rem; }
 address { display: flex; flex-wrap: wrap; gap: .55rem 1.6rem; font-style: normal; overflow-wrap: anywhere; }
 .footer { border-top: 1px solid var(--rule); color: var(--muted); }
 
@@ -101,7 +106,7 @@ address { display: flex; flex-wrap: wrap; gap: .55rem 1.6rem; font-style: normal
   .shell { width: calc(100% - 3rem); }
   .hero { gap: 1.75rem; }
   .section-heading, .work-entry { grid-template-columns: 9.5rem 1fr; column-gap: 1.25rem; }
-  .background-grid, address { margin-left: 10.75rem; }
+  .background-grid, .timeline, address { margin-left: 10.75rem; }
 }
 
 @media (max-width: 43rem) {
@@ -110,11 +115,12 @@ address { display: flex; flex-wrap: wrap; gap: .55rem 1.6rem; font-style: normal
   .figure { width: min(100%, 28rem); }
   .hero { padding-block: 3rem; }
   .section-heading { margin-bottom: 1.5rem; }
-  .background-grid, address { margin-left: 0; }
+  .background-grid, .timeline, address { margin-left: 0; }
   .credentials { padding: 1.4rem 0 0; border: 0; border-top: 1px solid var(--rule); }
 }
 
 @media (max-width: 23rem) {
   .masthead { flex-wrap: wrap; gap: .45rem; }
   h1 { font-size: 3.6rem; }
+  .timeline li { grid-template-columns: 1fr; gap: .25rem; }
 }
