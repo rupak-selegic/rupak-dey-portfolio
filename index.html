@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Rupak Dey is a software engineer in Kolkata, India, building web applications, commercial products, and Salesforce solutions for enterprise clients.">
+  <meta name="description" content="Rupak Dey is a software engineer in Kolkata, India, working on applied AI, AI agents, Model Context Protocol (MCP) integrations, and enterprise software.">
   <meta name="theme-color" content="#f7f5ee">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Rupak Dey · Software Engineer">
-  <meta property="og:description" content="Web applications, commercial products, and enterprise client projects by Rupak Dey.">
-  <title>Rupak Dey · Software Engineer</title>
+  <meta property="og:description" content="Applied AI and software engineering work by Rupak Dey, including AI agents, MCP integrations, and enterprise products.">
+  <title>Rupak Dey · Software Engineer | Applied AI &amp; AI Agents</title>
   <link rel="icon" href="mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -17,6 +17,7 @@
   <header class="shell masthead" id="top">
     <a class="identity" href="#top" aria-label="Rupak Dey, home"><span class="seal" aria-hidden="true">RD</span> Rupak Dey</a>
     <nav aria-label="Main navigation">
+      <a href="#ai-engineering">AI</a>
       <a href="#client-work">Work</a>
       <a href="#background">Background</a>
       <a href="#contact">Contact</a>
@@ -27,30 +28,37 @@
       <div class="intro">
         <p class="eyebrow"><span class="dot"></span> Software engineer in Kolkata, India</p>
         <h1 id="name">Rupak Dey</h1>
-        <p class="lede">I build web applications and the systems behind them.</p>
-        <p class="intro-copy">At Selegic, I’ve built a mindfulness web app, developed commercial products, and delivered Salesforce workflows for enterprise clients in the U.S. I work across interfaces, APIs, data models, and the rules that tie them together.</p>
-        <a class="text-link" href="#client-work">Explore my work <span aria-hidden="true">↓</span></a>
+        <p class="lede">I build enterprise software and AI agents that help people get work done.</p>
+        <p class="intro-copy">At Selegic, I shipped AI-assisted rule authoring and now help develop agents for sales reps and administrators. My work also spans CRM, full-stack product development, and Salesforce delivery for U.S. clients.</p>
+        <a class="text-link" href="#ai-engineering">Explore my AI work <span aria-hidden="true">↓</span></a>
       </div>
       <div class="work-index" aria-labelledby="work-index-title">
         <p class="eyebrow index-heading" id="work-index-title">Explore the portfolio</p>
         <ul>
           <li>
-            <a href="#client-work">
+            <a href="#ai-engineering">
               <span class="index-number" aria-hidden="true">01</span>
+              <span><strong>Applied AI engineering</strong><small>AI agents, tool integration, and human approval</small></span>
+              <span class="index-arrow" aria-hidden="true">↓</span>
+            </a>
+          </li>
+          <li>
+            <a href="#client-work">
+              <span class="index-number" aria-hidden="true">02</span>
               <span><strong>Client engagements</strong><small>Cornerstone OnDemand, GoGuardian, Charles River Laboratories</small></span>
               <span class="index-arrow" aria-hidden="true">↓</span>
             </a>
           </li>
           <li>
             <a href="#work">
-              <span class="index-number" aria-hidden="true">02</span>
+              <span class="index-number" aria-hidden="true">03</span>
               <span><strong>Product engineering</strong><small>Selegic CRM, Catalog, and CPQ</small></span>
               <span class="index-arrow" aria-hidden="true">↓</span>
             </a>
           </li>
           <li>
             <a href="#attenta">
-              <span class="index-number" aria-hidden="true">03</span>
+              <span class="index-number" aria-hidden="true">04</span>
               <span><strong>Full-stack development</strong><small>Attenta, a mindfulness web application</small></span>
               <span class="index-arrow" aria-hidden="true">↓</span>
             </a>
@@ -59,9 +67,36 @@
       </div>
     </section>
 
+    <section class="section" id="ai-engineering" aria-labelledby="ai-title">
+      <div class="section-heading">
+        <p class="eyebrow section-number">01 / Applied AI</p>
+        <h2 id="ai-title">AI agents and integrations</h2>
+      </div>
+      <article class="work-entry">
+        <div class="entry-meta"><p>Shipped · Selegic CPQ</p></div>
+        <div class="entry-body">
+          <h3>AI-assisted rule authoring</h3>
+          <p>I integrated an AI workflow that drafts configuration and pricing rules for a configure-price-quote (CPQ) platform. Administrators can review, validate, and approve a draft before it becomes a live rule. The same workflow lets them reject drafts that need more work.</p>
+        </div>
+      </article>
+      <article class="work-entry">
+        <div class="entry-meta"><p>In development · Selegic CPQ</p></div>
+        <div class="entry-body">
+          <h3>Agents for quoting and administration</h3>
+          <p>I contribute to a set of AI agents and integrations, each scoped to a different part of the quoting workflow.</p>
+          <dl class="agent-list">
+            <div><dt>Quote agent</dt><dd>Creates accounts, opportunities, and quotes, and adds products to a quote.</dd></div>
+            <div><dt>Admin agent</dt><dd>Manages records and supports bulk import and export.</dd></div>
+            <div><dt>In-cart assistant</dt><dd>Answers sales reps’ questions in the quote cart and asks for explicit confirmation before applying changes.</dd></div>
+            <div><dt>Model Context Protocol (MCP) connector</dt><dd>Exposes CPQ tools to external AI clients using per-user authentication and action approval.</dd></div>
+          </dl>
+        </div>
+      </article>
+    </section>
+
     <section class="section" id="client-work" aria-labelledby="client-work-title">
       <div class="section-heading">
-        <p class="eyebrow section-number">01 / Client work</p>
+        <p class="eyebrow section-number">02 / Client work</p>
         <h2 id="client-work-title">Enterprise engagements</h2>
       </div>
       <p class="section-intro">Selected work delivered through Selegic for U.S. clients in learning software, education technology, and life sciences.</p>
@@ -92,7 +127,7 @@
 
     <section class="section" id="work" aria-labelledby="work-title">
       <div class="section-heading">
-        <p class="eyebrow section-number">02 / Product work</p>
+        <p class="eyebrow section-number">03 / Product work</p>
         <h2 id="work-title">Products and applications</h2>
       </div>
       <article class="work-entry">
@@ -103,7 +138,7 @@
         <div class="entry-body">
           <h3>Selegic CPQ</h3>
           <p>I helped ship a commercial configure-price-quote platform with a rules engine shared by Salesforce and Selegic CRM. It evaluates nested conditions against quotes, line items, and product options, keeping the same configuration and pricing rules across both platforms.</p>
-          <p>I designed the APIs behind the quoting and admin portals and built a review workflow for AI-drafted rules. Quote and admin agents and an MCP connector are in development.</p>
+          <p>I designed the APIs behind the quoting and admin portals. This product is also where I work on <a href="#ai-engineering">AI-assisted rule authoring and agent workflows</a>.</p>
           <p class="stack">TypeScript · Angular · Node.js · Salesforce</p>
           <details class="architecture">
             <summary>See the CPQ architecture</summary>
@@ -178,7 +213,7 @@
 
     <section class="section background" id="background" aria-labelledby="background-title">
       <div class="section-heading">
-        <p class="eyebrow section-number">03 / Education &amp; career</p>
+        <p class="eyebrow section-number">04 / Education &amp; career</p>
         <h2 id="background-title">Background</h2>
       </div>
       <div class="background-grid">
@@ -202,6 +237,7 @@
       <div class="toolkit">
         <h3>Technical toolkit</h3>
         <dl>
+          <div><dt>Applied AI</dt><dd>AI agent development, tool orchestration, Model Context Protocol (MCP), human-in-the-loop approval</dd></div>
           <div><dt>Interfaces</dt><dd>React, Angular, TypeScript, Lightning Web Components</dd></div>
           <div><dt>APIs and data</dt><dd>Node.js, Hono, REST, PostgreSQL, MongoDB</dd></div>
           <div><dt>Platforms and delivery</dt><dd>Salesforce, AWS, Cloudflare Workers, GitHub Actions</dd></div>
@@ -244,7 +280,7 @@
 
     <section class="section contact" id="contact" aria-labelledby="contact-title">
       <div class="section-heading">
-        <p class="eyebrow section-number">04 / Contact</p>
+        <p class="eyebrow section-number">05 / Contact</p>
         <h2 id="contact-title">Get in touch</h2>
       </div>
       <address>

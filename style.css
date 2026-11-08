@@ -116,6 +116,10 @@ figcaption { padding-top: .75rem; border-top: 1px solid #697462; color: #e2e6cc;
 .entry-body h3, .background-grid h3 { margin-bottom: .65rem; }
 .entry-body p, .background-grid p { color: var(--muted); }
 .entry-body .stack { color: var(--accent); font-size: .74rem; margin-bottom: 0; }
+.agent-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .9rem 1.4rem; margin: 1.25rem 0 0; }
+.agent-list > div { border-top: 1px solid var(--rule); padding-top: .65rem; }
+.agent-list dt { font-weight: 650; }
+.agent-list dd { margin: .2rem 0 0; color: var(--muted); font-size: .875rem; }
 
 .section-intro, .background-grid, .toolkit, .timeline, address { margin-left: 14.5rem; }
 .background-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 2.5rem; }
@@ -125,7 +129,7 @@ figcaption { padding-top: .75rem; border-top: 1px solid #697462; color: #e2e6cc;
 .credentials ul { margin: 0; padding-left: 1.1rem; color: var(--muted); }
 .credentials .text-link { margin-top: .75rem; }
 .toolkit { margin-top: 2.75rem; }
-.toolkit dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .85rem 1.25rem; margin: 1rem 0 0; }
+.toolkit dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .85rem 1.25rem; margin: 1rem 0 0; }
 .toolkit dl > div { border-top: 1px solid var(--rule); padding-top: .7rem; }
 .toolkit dt { font-weight: 650; }
 .toolkit dd { margin: .2rem 0 0; color: var(--muted); font-size: .875rem; }
@@ -161,5 +165,5 @@ address { display: flex; flex-wrap: wrap; gap: .55rem 1.6rem; font-style: normal
 @media (max-width: 23rem) {
   .masthead { flex-wrap: wrap; gap: .45rem; }
   h1 { font-size: 3.6rem; }
-  .timeline li { grid-template-columns: 1fr; gap: .25rem; }
+  .timeline li, .agent-list { grid-template-columns: 1fr; gap: .25rem; }
 }
